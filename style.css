@@ -146,7 +146,6 @@ nav ul {
   border-radius: 12px;
   margin: 0 auto; 
   color: #272726;
-  position: relative;
 }
 
 
@@ -174,6 +173,37 @@ nav ul {
   border-radius: 12px;
   margin: 0 auto; 
 }
+
+.rounded-pfp {
+  margin-top: 2rem;
+  border-radius: 18px;
+  width: 500px; 
+  height: 500px; 
+  object-fit: cover; 
+}
+
+.flex-container {
+  display: flex;
+  gap:30px;
+}
+
+.rounded-rectangle-excerpt {
+  width: 99%;
+  height: 10.5rem;         
+  background-color:#51504D; 
+  border-radius: 12px;
+  margin-top: 2rem;
+  margin-right:0.74rem;
+  padding: 1rem;
+}
+.rounded-rectangle-excerpt p {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  color: #DDDCD8;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
 
 
 /* fix later - better responsiveness */
