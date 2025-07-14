@@ -11,31 +11,43 @@ body {
   padding: 2rem;
 }
 
-.navbar {
+#mainNavbar {
   background-color: #272726;
 }
 
-.nav-link.active{
-  color: #DAD3c9 !important; 
-}
-.nav-link {
+#mainNavbar .nav-link {
   position: relative;
   text-decoration: none;
   color: #DAD3c9;
   transition: color 0.3s;
 }
-.nav-link::after {
+
+/* hover color change (but no underline on hover) */
+#mainNavbar .nav-link:hover {
+  color: #969492;
+}
+
+/* underline effect only when active */
+#mainNavbar .nav-link::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 0;
+  width: 100%;
   height: 2px;
   background-color: #DAD3c9;
-  transition: width 0.5s;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
-.nav-link:hover::after {
-  width: 100%;
+
+/* make the underline visible only for active link */
+#mainNavbar .nav-link.active::after {
+  opacity: 1;
+}
+
+/* keep the color for the active link */
+#mainNavbar .nav-link.active {
+  color: #DAD3c9 !important;
 }
 
 a {
@@ -78,9 +90,6 @@ nav ul {
   gap: 2rem;
 }
 
-#home {
-  padding-bottom: 8rem; 
-}
 #home h1 {
   padding-top: 3%;
   font-weight: 700;
@@ -94,6 +103,7 @@ nav ul {
   font-size: 1.85rem;
   padding-right: 2.5%
 }
+
 
 .home-button {
   padding: 8px 25px;
@@ -127,25 +137,68 @@ nav ul {
 #about h1 {
   color: #272726;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 4.7rem;
   padding-left: 2%;
   text-align: left;
+  margin-top: 0.35rem;
 }
 #about h2 {
-  color: #272726;
-  padding-left: 2.5%;
-  font-size: 1.85rem;
-  padding-right: 2.5%;
-  margin-top: -0.4rem;
+  color: #DAD3c9;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
+
 .rounded-rectangle-about {
   display: inline-block;
   width: 99%;
-  height: 10rem;         
+  height: auto;         
   background-color: #DAD3c9;  
   border-radius: 12px;
   margin: 0 auto; 
   color: #272726;
+  margin-top: 1.5rem;
+}
+.solid-line-about{
+  border: none;
+  height: 0.5px;
+  background-color: #DAD3c9; 
+  margin: auto; 
+  opacity: 1;
+  margin-bottom: 0.75rem;
+}
+.rounded-rectangle-excerpt {
+  display: inline-block;
+  width: auto;
+  height: auto;         
+  background-color:#51504D; 
+  border-radius: 12px;
+  margin-top: 2rem;
+  margin-right:0.74rem;
+  padding: 1.4rem;
+}
+.rounded-rectangle-excerpt p {
+  font-family: "Helvetica";
+  color: #DDDCD8;
+  font-size: 1rem;
+  font-weight: 300;
+}
+svg {
+  margin-left: 1rem;
+}
+#signature {
+  stroke-dasharray: 1258.709228515625;
+  animation: 1s signName linear;
+}
+@keyframes signName {
+  0% {
+    stroke-dashoffset: 1258.709228515625;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.push-right{
+  margin-left: auto;
 }
 
 
@@ -167,41 +220,33 @@ nav ul {
   padding-right: 2.5%;
 }
 .rounded-rectangle-projects {
+  display: inline-block;
   width: 99%;
-  height: 10.5rem;         
+  height: auto;         
   background-color: #DAD3c9;  
   border-radius: 12px;
   margin: 0 auto; 
+  color: #272726;
+  margin-top: 1.5rem;
+  
 }
 
 .rounded-pfp {
   margin-top: 2rem;
   border-radius: 18px;
-  width: 500px; 
-  height: 500px; 
-  object-fit: cover; 
+  height: auto;
+  width: 100rem;
+  object-fit: cover;
+  object-position: left center;
 }
 
 .flex-container {
   display: flex;
   gap:30px;
+  width: 100%;
 }
 
-.rounded-rectangle-excerpt {
-  width: 99%;
-  height: 10.5rem;         
-  background-color:#51504D; 
-  border-radius: 12px;
-  margin-top: 2rem;
-  margin-right:0.74rem;
-  padding: 1rem;
-}
-.rounded-rectangle-excerpt p {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  color: #DDDCD8;
-  font-size: 1rem;
-  font-weight: 400;
-}
+
 
 
 
