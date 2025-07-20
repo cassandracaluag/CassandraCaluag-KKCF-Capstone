@@ -25,4 +25,18 @@ setTimeout(() => {
     backDelay: 1200,
     loop: true
   });
-}, 2000); // waits 3 seconds before typing starts
+}, 2000);
+
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.5,
+});
+const signature = document.getElementById('signature');
+observer.observe(signature);

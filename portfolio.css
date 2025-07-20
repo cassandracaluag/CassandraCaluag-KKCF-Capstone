@@ -50,7 +50,6 @@ body {
   color: #DAD3c9 !important;
 }
 
-
 a {
   color: #DAD3c9;
   text-align: right;
@@ -217,23 +216,19 @@ svg {
 
 #signature {
   stroke-dasharray: 1258.709228515625;
-  animation: 1s signName linear;
+  stroke-dashoffset: 1258.709228515625;
+  transition: stroke-dashoffset 2.3s ease-in;
 }
 
-@keyframes signName {
-  0% {
-    stroke-dashoffset: 1258.709228515625;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
-  }
+#signature.animate {
+  stroke-dashoffset: 0;
 }
 
 .flex-container {
   display: flex;
   gap: 30px;
 }
+
 .flex-container-skills {
   display: flex;
   gap: 15px;
@@ -303,8 +298,10 @@ svg {
   width: 100%;
 }
 
+
 .middle-section {
-  margin-bottom: 4rem; /* default! */
+  margin-bottom: 4rem;
+  /* default! */
 }
 
 @media screen and (min-height: 768px) {
