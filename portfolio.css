@@ -125,8 +125,6 @@ nav ul {
   padding-top: 10rem;
 }
 
-
-
 #about {
   /*padding-bottom: 60rem;*/
   padding: 2%;
@@ -304,22 +302,6 @@ svg {
 .coding-journey-box {
   width: 100%;
 }
-
-/*
-@media (max-width: 1000px) {
-  .social-links {
-    padding-left: 2.7%;
-    margin-top: -15%;
-  }
-  h4, h5 {
-    padding-left: 4%;
-  }
-  .contact-info {
-    padding-top: -8rem;
-  }
-}
-  */
-
 
 .middle-section {
   margin-bottom: 4rem; /* default! */

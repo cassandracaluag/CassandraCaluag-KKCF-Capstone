@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #E8EAE3;
+    padding: 2em;
+}
+
+.nav-link {
+    color: #80848B;
+}
+
+.nav-link.active {
+    color: #444E61 !important;
+}
+
+.nav-link:hover {
+    color: #c4cad6;
+}
+
+
+#home h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    color: #444E61;
+    letter-spacing: -0.08em;
+    font-size: 9.3em;
+}
+
+.highlight {
+    color: #80848B;
+}
