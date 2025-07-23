@@ -70,7 +70,7 @@ a {
   text-align: right;
   font-weight: 500;
   font-size: 1.8rem;
-  padding-right: 3rem;
+  padding-right: 3%;
 }
 
 nav ul {
@@ -125,7 +125,6 @@ nav ul {
 }
 
 #about {
-  /*padding-bottom: 60rem;*/
   padding: 2%;
   width: 100%;
   background-color: #F1F0ED;
@@ -184,9 +183,14 @@ nav ul {
   margin-right: 0.15rem;
 }
 
+.skill-outline {
+  color: #66645E;
+  margin-bottom: -0.28em;
+}
+
 .rounded-rectangle-excerpt {
   display: inline-block;
-  width: 60%;
+  width: auto;
   height: auto;
   background-color: #51504D;
   border-radius: 12px;
@@ -226,13 +230,10 @@ svg {
 
 .flex-container {
   display: flex;
-  gap: 30px;
-}
-
-.flex-container-skills {
-  display: flex;
   gap: 15px;
 }
+
+
 
 .background-box {
   display: inline-block;
@@ -246,7 +247,6 @@ svg {
 
 .skills-excerpt-box {
   margin-top: 1rem;
-  width: 100%;
   height: auto;
   background-color: #CCCAC4;
   border-radius: 12px;
@@ -254,20 +254,22 @@ svg {
   padding: 1.5rem;
 }
 
+.egg-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
 .skill-highlight-egg {
   background-color: #CCCAC4;
   border-radius: 15px;
   border: 0.5px solid #6c6b67;
   padding: 0.45rem;
+  width: fit-content;
+  white-space: nowrap;
 }
 
-.coding-journey-excerpt {
-  background-color: #bcbab4;
-  border-radius: 12px;
-  height: 30rem;
-  padding: 1.8rem;
-}
-
+/*
 .coding-journey-excerpt h4 {
   font-family: "Helvetica";
   color: #6E6D69;
@@ -276,6 +278,7 @@ svg {
   margin-top: 15rem;
   padding-bottom: 0.75rem;
 }
+  */
 
 .coding-journey-excerpt h5 {
   font-family: "Helvetica";
@@ -300,7 +303,7 @@ svg {
 
 
 .middle-section {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   /* default! */
 }
 

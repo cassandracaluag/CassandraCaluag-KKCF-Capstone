@@ -20,10 +20,14 @@ body {
     color: #c4cad6;
 }
 
-
-
-
 #home h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    color: #444E61;
+    letter-spacing: -0.08em;
+    font-size: 8em;
+}
+#home h2 {
     font-family: "Times New Roman", Times, serif;
     font-style: italic;
     color: #444E61;
@@ -32,5 +36,10 @@ body {
 }
 
 .highlight {
-    color: #80848B;
+    color: #757C77;
+}
+.style-guide {
+    width: 1400px;
+    height: 909px;
+    border-radius: 18px;
 }
