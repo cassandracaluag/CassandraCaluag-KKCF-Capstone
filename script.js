@@ -40,3 +40,4 @@ const observer = new IntersectionObserver((entries, observer) => {
 });
 const signature = document.getElementById('signature');
 observer.observe(signature);
+

@@ -8,6 +8,7 @@ body {
     background-color: #E8EAE3;
 }
 
+
 #mainNavbar .nav-link {
     color: #80848B;
 }
@@ -20,6 +21,10 @@ body {
     color: #c4cad6;
 }
 
+.harbor-logo {
+    margin-top: 1em;
+}
+
 #home h1 {
     font-family: "Times New Roman", Times, serif;
     font-style: italic;
@@ -27,6 +32,7 @@ body {
     letter-spacing: -0.08em;
     font-size: 8em;
 }
+
 #home h2 {
     font-family: "Times New Roman", Times, serif;
     font-style: italic;
@@ -35,11 +41,44 @@ body {
     font-size: 9em;
 }
 
+#home h3 {
+    font-family: "Helvetica";
+    font-size: 3em;
+    margin-bottom: -0.5em;
+    margin-top: 1.5em;
+}
+
 .highlight {
     color: #757C77;
 }
+
 .style-guide {
     width: 1400px;
     height: 909px;
-    border-radius: 18px;
+}
+
+footer {
+    font-family: "Helvetica";
+    color: #3e444b;
+}
+
+@media (max-width: 1024px) {
+    #home h1 {
+        font-size: 5em;
+    }
+
+    #home h2 {
+        font-size: 6em;
+    }
+}
+
+/* tablets */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 4.5em;
+    }
+
+    #home h2 {
+        font-size: 5.5em;
+    }
 }

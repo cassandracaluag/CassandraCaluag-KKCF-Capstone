@@ -269,42 +269,14 @@ svg {
   white-space: nowrap;
 }
 
-/*
-.coding-journey-excerpt h4 {
-  font-family: "Helvetica";
-  color: #6E6D69;
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-top: 15rem;
-  padding-bottom: 0.75rem;
-}
-  */
-
-.coding-journey-excerpt h5 {
-  font-family: "Helvetica";
-  color: #363531;
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-top: 1rem;
-}
-
-.coding-journey-excerpt p {
-  font-family: "Helvetica";
-  color: #363531;
-  font-size: 2.3rem;
-  font-weight: 300;
-  padding-right: 5rem;
-}
-
 .rounded-rectangle-excerpt,
 .coding-journey-box {
   width: 100%;
 }
 
-
+/* default! */
 .middle-section {
   margin-bottom: 5rem;
-  /* default! */
 }
 
 @media screen and (min-height: 768px) {
