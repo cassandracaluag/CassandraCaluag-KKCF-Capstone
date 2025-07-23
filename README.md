@@ -1,1 +1,3 @@
-Part of my capstone project for the 2025 Karim Kharbouch Coding Fellowship @ The Knowledge House
+cassie's capstone project for the 2025 karim kharbouch coding fellowship
+<br>
+consists of: personal portfolio & tech startup idea - harbor.
