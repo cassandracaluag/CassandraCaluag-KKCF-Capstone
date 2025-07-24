@@ -10,7 +10,7 @@ body {
 
 
 #mainNavbar .nav-link {
-    color: #80848B;
+    color: #6e7c85;
 }
 
 #mainNavbar .nav-link.active {
@@ -18,7 +18,7 @@ body {
 }
 
 #mainNavbar .nav-link:hover {
-    color: #c4cad6;
+    color: #99aabb;
 }
 
 .harbor-logo {
