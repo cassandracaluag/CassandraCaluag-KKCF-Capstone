@@ -28,6 +28,7 @@ setTimeout(() => {
 }, 2000);
 
 
+// signature animation! 
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -36,8 +37,7 @@ const observer = new IntersectionObserver((entries, observer) => {
     }
   });
 }, {
-  threshold: 0.5,
+  threshold: 1,
 });
 const signature = document.getElementById('signature');
 observer.observe(signature);
-
